@@ -1,5 +1,4 @@
 const modalBtn = document.querySelectorAll(".more");
-console.log("modalBtn: ", modalBtn);
 const modal = document.querySelector(".modal");
 
 modalBtn.forEach((btn) => {
@@ -9,7 +8,6 @@ modalBtn.forEach((btn) => {
 });
 
 modal.addEventListener("click", (event) => {
-    console.log(event.target);
     const target = event.target;
 
     if (target.classList.contains("overlay") || target.classList.contains("modal__close")) {
